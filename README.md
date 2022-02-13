@@ -1,6 +1,6 @@
 # go-haversine
 
-Heavily inspired by [Umahmood's haversine](https://github.com/umahmood/haversine), go-haversine provides a nice go
+Heavily inspired by [Umahmood's haversine](https://github.com/umahmood/haversine), go-haversine provides a nice Go
 interface to calculate distance between coordinates using the haversine formula.
 
 Instead of returning two values for both Kilometers and Miles, go-haversine returns a struct that contains the
@@ -35,7 +35,7 @@ func main() {
 		result.Kilometers(), int(result.Kilometers()*1000),
 	)
 	
-	// I'm in an hurry method
+	// I'm in a hurry method
 	log.Printf(
 		"Oxford and Turin are %.2fkm away.",
 		haversine.Distance(
@@ -44,6 +44,5 @@ func main() {
 		).Kilometers(),
 	)
 }
-
 ```
     
